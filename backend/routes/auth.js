@@ -162,8 +162,6 @@ router.post('/login',
 
 
 
-
-
 // Check Token using POST: '/api/auth/checkuser' endpoint : Login Required
 // Route 3: router.post(path, array of validators or without array both will work, callback(req, res));
 router.post('/checkuser', fetchuser,
