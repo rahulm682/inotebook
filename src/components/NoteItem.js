@@ -3,7 +3,7 @@ import NoteContext from '../context/noteContext';
 
 function NoteItem(props) {
     const { deleteNote } = useContext(NoteContext);
-    // Here the updateNote functionn is passed as a props from parent
+    // Here the updateNote function is passed as a props from parent
     const { note, updateNoteShowModal, showAlert } = props;
     const {_id, title, description, tag } = note;
     return (

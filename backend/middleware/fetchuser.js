@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 // Signature Key
 const AUTH_KEY = "MYNameISRahul@6820";
 
-// middleware fxn)request, response, callbackfxn)
+// middleware fxn(request, response, callbackfxn)
 const fetchuser = (req, res, next) => {
     // Get the authenticated token from the header having key: auth-token
     const authToken = req.header('auth-token');

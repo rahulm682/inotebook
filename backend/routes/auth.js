@@ -24,7 +24,7 @@ const fetchuser = require('../middleware/fetchuser');
 
 
 // Create new User using POST: '/api/auth/createnewuser' endpoint : No Login Required
-// Route 1: router.post(path, arra of validators or without array both will work, callback(req, res));
+// Route 1: router.post(path, array of validators or without array both will work, callback(req, res));
 router.post('/createuser',
     // body(fieldname, errorMsg)
     [body("name", "Enter Valid name").isLength({ min: 5 }),
@@ -71,7 +71,7 @@ router.post('/createuser',
             const secPassword = await bcrypt.hash(req.body.password, salt);
             console.log(secPassword);
             
-            // Third way of Creating user using asysnchronous function
+            // Third way of Creating user using asynchronous function
             user = await User.create({
                 name: req.body.name,
                 email: req.body.email,

@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-    // Use the location hook to know about the cuurent location
+    // Use the location hook to know about the current location
     let location = useLocation();
     useEffect(() => {
         console.log(location.pathname);
